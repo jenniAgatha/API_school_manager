@@ -1,17 +1,15 @@
-
-
+package senai.com.br.Criacao.de.API.curso;
 
 public record DadosDetalhamentoCurso (
 
-    Long id,
     String nome,
-    Enum periodo
+    Periodo periodo
 
 
 ) {
 
     public DadosDetalhamentoCurso(Curso curso) {
-        this(curso.getiId(),
+        this(
                 curso.getNome(),
                 curso.getPeriodo()
 

@@ -1,3 +1,5 @@
+package senai.com.br.Criacao.de.API.curso;
+
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
@@ -9,8 +11,8 @@ public record CadastroCurso(
     String nome,
 
 
-@NotBlank(message = "Periodo é obrigatório")
-String periodo
+@NotBlank(message = "senai.com.br.Criacao.de.API.curso.Periodo é obrigatório")
+Periodo periodo
 )
 {}
 
