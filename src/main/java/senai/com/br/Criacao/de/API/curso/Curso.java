@@ -11,23 +11,35 @@ import lombok.NoArgsConstructor;
 @Entity(name ="Curso")
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
 @EqualsAndHashCode(of ="id")
 
-
-public class curso {
+public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Enumerated(EnumType.STRING)
+
 
     private Long id;
     private String nome;
     private String periodo;
 
-    public curso(Long id, String periodo, String nome) {
+
+    public Curso(Long id, String periodo, String nome) {
         this.id = id;
         this.periodo = periodo;
         this.nome = nome;
-    }
-}
+
+
+            }
+
+        }
+
+
+
+
+
+
+
+
 
 
